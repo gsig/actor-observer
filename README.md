@@ -21,13 +21,12 @@ code = {https://github.com/gsig/actor-observer},
 
 The Charades-Ego and Charades datasets are available at https://allenai.org/plato/charades/
 
+[![Charades-Ego Teaser Video](./charades-ego-teaser.png "Charades-Ego Teaser Video")](https://www.dropbox.com/s/y2mko0l8llaha7x/CharadesEgo_teaser.mp4?dl=0)
+
 ## Technical Overview:
  
-For testing. The network uses a batch size of 25, scores all images, and pools the output to make a classfication prediction or uses all 25 outputs for localization.
-
-All outputs are stored in the cache-dir. This includes epoch*.txt which is the classification output, and localize*.txt which is the localization output (note the you need to specify that you want this in the options).
-Those output files can be combined after training with the python scripts in this directory.
-All output files can be scored with the official MATLAB evaluation script provided with the Charades dataset.
+All outputs are stored in the cache-dir. This includes epoch*.txt which is the classification output.
+All output files can be scored with the official MATLAB evaluation script provided with the Charades / CharadesEgo datasets.
 
 Requirements:
 * Python 2.7
@@ -36,8 +35,8 @@ Requirements:
 
 ## Steps to train your own model on CharadesEgo:
  
-1. Download the Charades Annotations (allenai.org/plato/charades/)
-2. Download the Charades RGB frames (allenai.org/plato/charades/)
+1. Download the CharadesEgo Annotations (allenai.org/plato/charades/)
+2. Download the CharadesEgo RGB frames (allenai.org/plato/charades/)
 3. Duplicate and edit one of the experiment files under exp/ with appropriate parameters. For additional parameters, see opts.py
 4. Run an experiment by calling python exp/rgbnet.py where rgbnet.py is your experiment file
 5. The checkpoints/logfiles/outputs are stored in your specified cache directory. 
