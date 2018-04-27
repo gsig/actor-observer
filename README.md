@@ -19,7 +19,7 @@ code = {https://github.com/gsig/actor-observer},
 
 ## Dataset:
 
-The Charades-Ego and Charades datasets are available at https://allenai.org/plato/charades/
+The Charades-Ego and Charades datasets are available at http://allenai.org/plato/charades/
 
 [![Charades-Ego Teaser Video](./charades-ego-teaser.png "Charades-Ego Teaser Video")](https://www.youtube.com/watch?v=JkBFE2pzJkw&feature=youtu.be)
 
