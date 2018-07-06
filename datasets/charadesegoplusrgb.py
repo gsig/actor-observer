@@ -36,7 +36,7 @@ class CharadesEgoPlusRGB(CharadesMeta):
         vars(newargs).update({
             'train_file': args.original_charades_train,
             'val_file': args.original_charades_test,
-            'data': '/scratch/gsigurds/Charades_v1_rgb/'})
+            'data': args.original_charades_data})
         train_dataset, val_dataset, valvideo_dataset = super(CharadesEgoPlusRGB, cls).get(newargs)
         train_dataset.transform.transforms.append(transforms.Lambda(lambda x: [x, x, x]))
         val_dataset.transform.transforms.append(transforms.Lambda(lambda x: [x, x, x]))
