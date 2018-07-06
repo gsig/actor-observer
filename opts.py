@@ -11,6 +11,7 @@ def parse():
     parser.add_argument('--egocentric-test-data', default='./datasets/labels/CharadesEgo_v0_egocentric_test.csv', help='path to labels for egocentric classification')
     parser.add_argument('--original-charades-train', default='./Charades_v1_train.csv', help='Original Charades Train')
     parser.add_argument('--original-charades-test', default='./Charades_v1_test.csv', help='Original Charades Test')
+    parser.add_argument('--original-charades-data', default='/scratch/gsigurds/Charades_v1_rgb/', help='path to original charades frames')
     parser.add_argument('--train-file', default='./CharadesEgo_v1_train.csv', type=str)
     parser.add_argument('--val-file', default='./CharadesEgo_v1_test.csv', type=str)
     parser.add_argument('--arch', '-a', metavar='ARCH', default='alexnet', help='model architecture: ')
