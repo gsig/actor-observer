@@ -25,7 +25,7 @@ class ActorObserverFC7(ActorObserverBase):
         base_x = self.basenet(x)
         base_y = self.basenet(y)
         w_x = self.firstpos_fc(base_x).view(-1) * torch.exp(self.firstpos_scale)
-        w_y = self.third_fc(base_x).view(-1) * torch.exp(self.third_scale)
+        w_y = self.third_fc(base_y).view(-1) * torch.exp(self.third_scale)
         dprint('fc7 norms: {}\t {}', base_x.data.norm(), base_y.data.norm())
         self.verbose()
         return base_x, base_y, w_x, w_y
