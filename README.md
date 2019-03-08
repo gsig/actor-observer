@@ -1,3 +1,8 @@
+# Errata
+
+**In the CVPR'18 paper, Table 3 uses version 0 of the CharadesEgo dataset for evaluation. Updated table for version 1 of the dataset will be added here.**
+
+
 ## ActorObserverNet code in PyTorch 
 
 From: Actor and Observer: Joint Modeling of First and Third-Person Videos, CVPR 2018
